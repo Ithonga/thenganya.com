@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"; // or any icons you're
 
 const slides = [
     {
-      image: "/nganya.png",
+      image: "/nganya.webp",
       heading : "Welcome to thenganya.com",
       subheading: "Learn, Showcase, and Explore Matatu Culture"
     },
