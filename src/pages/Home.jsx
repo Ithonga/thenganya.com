@@ -5,18 +5,49 @@ const slides = [
     {
       image: "/nganya.webp",
       heading : "Welcome to thenganya.com",
-      subheading: "Learn, Showcase, and Explore Matatu Culture"
+      subheading: "Learn, Showcase, and "
     },
-    // {
-    //   image: "/nganya.png",
-    //   heading: "Luxury Accommodation",
-    //   subheading: "Elegant suites with stunning views"
-    // },
-    // {
-    //   image: "/nganya.png",
-    //   heading: "Exquisite Dining",
-    //   subheading: "Savor the finest cuisine in our restaurants"
-    // }
+    {
+      image: "/nganya1.webp",
+      heading: "Rongai 125",
+      subheading: ""
+    },
+    {
+      image: "/nganya2.webp",
+      heading: "Umoja",
+      subheading: ""
+    },
+    {
+      image: "/nganya3.webp",
+      heading: "Ngong",
+      subheading: ""
+    },
+    {
+      image: "/nganya4.webp",
+      heading: "Emba Pesa",
+      subheading: ""
+    },
+    {
+      image: "/nganya5.webp",
+      heading: "Kasarani",
+      subheading: ""
+    },
+    {
+      image: "/nganya6.webp",
+      heading: "Rongai 125",
+      subheading: ""
+    },
+    {
+      image: "/nganya7.webp",
+      heading: "Buruburu",
+      subheading: ""
+    },
+    {
+      image: "/nganya8.webp",
+      heading: "Kiambu 100",
+      subheading: ""
+    },
+    
   ];
 export default function HeroSlider() {
 
@@ -42,7 +73,7 @@ export default function HeroSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       goToNextSlide();
-    }, 5000); // Change slide every 5 seconds
+    }, 3000); // Change slide every 5 seconds
 
     return () => clearInterval(timer); // Clear interval when component unmounts
   }, [currentSlide]);
@@ -58,7 +89,7 @@ export default function HeroSlider() {
           }`}
         >
           {/* Background overlay (black transparent layer) */}
-          <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
+          <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
           {/* Slide Image */}
           <img
@@ -70,7 +101,7 @@ export default function HeroSlider() {
           />
 
           {/* Slide Content */}
-          <div className="absolute inset-0 flex flex-col justify-center z-20 px-10">
+          <div className="absolute inset-0 flex flex-col justify-center z-20 px-10 md:ml-8">
             <div className="max-w-4xl animate-fade-up">
               {/* Slide Heading */}
               <h1 className="font-playfair text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
@@ -79,7 +110,7 @@ export default function HeroSlider() {
 
               {/* Slide Subheading */}
               <p className="text-white text-lg md:text-xl lg:text-2xl mb-8">
-                {slide.subheading}
+                {slide.subheading}Explore Matatu Culture 
               </p>
 
               {/* CTA Buttons */}
@@ -100,7 +131,7 @@ export default function HeroSlider() {
       ))}
 
       {/* Navigation Arrows */}
-      {/* <button
+      <button
         onClick={goToPrevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-black/30 hover:bg-black/50 text-white rounded-full p-2 transition-all"
         aria-label="Previous slide"
@@ -113,7 +144,7 @@ export default function HeroSlider() {
         aria-label="Next slide"
       >
         <ChevronRight size={24} />
-      </button> */}
+      </button>
 
       {/* Slide Indicators (dots) */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-2">
@@ -123,7 +154,7 @@ export default function HeroSlider() {
             onClick={() => goToSlide(index)}
             aria-label={`Go to slide ${index + 1}`}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "bg-resort-gold w-10" : "bg-white/60"
+              index === currentSlide ? "bg-yellow-400" : "bg-white/60"
             }`}
           />
         ))}
