@@ -2,13 +2,11 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import details from "../details/details";
 import Collections from "../components/Collections";
-import WelcomeBanner from "../components/Welcome";
 
 function HomePage() {
   return (
     <>
       <div className="flex flex-col gap-10">
-      <WelcomeBanner/>
         <HeroSection />
         <Collections/>
         {/* <div className="flex p-4 justify-center items-center gap-10 m-9">

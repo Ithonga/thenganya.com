@@ -7,7 +7,7 @@ function WelcomeNotification() {
     const hasSeenWelcome = localStorage.getItem("hasSeenWelcome");
     if (!hasSeenWelcome) {
       setShow(true);
-      localStoragesetItem("hasSeenWelcome", "true");
+      localStorage.setItem("hasSeenWelcome", "true");
     }
   }, []);
 
