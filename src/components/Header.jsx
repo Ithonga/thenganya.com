@@ -10,22 +10,22 @@ export default function Header() {
           <NavLink to={"/home"}>
             <li>Home</li>
           </NavLink>
-          <NavLink to={"/home"}>
+          <NavLink to={"/about"}>
             <li>About</li>
           </NavLink>
-          <NavLink to={"/hom"}>
+          <NavLink to={"/article"}>
             <li>Article</li>
           </NavLink>
-          <NavLink to={"/home"}>
+          <NavLink to={"/gallery"}>
             <li>Gallery</li>
           </NavLink>
-          <NavLink to={"/home"}>
+          <NavLink to={"/contact"}>
             <li>Contacts</li>
           </NavLink>
-          <NavLink to={"/home"}>
+          <NavLink to={"/awards"}>
             <li>Awards</li>
           </NavLink>
-          <NavLink to={"/home"}>
+          <NavLink to={"/events"}>
             <li>Events</li>
           </NavLink>
         </ul>
