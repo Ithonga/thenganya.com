@@ -5,7 +5,6 @@ export default {
     extend: {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
-        poppins: ["Poppins", "sans-serif"],
         rouge: ["Rouge Script", "cursive"],
       }
     },
