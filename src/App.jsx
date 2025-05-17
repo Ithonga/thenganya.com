@@ -19,8 +19,8 @@ export default function App() {
   const location = useLocation()
 
 
-  const validRoute = ["/home"];
-  const isValidRoute = validRoute.includes(location.pathname);
+  const hideRoute = ["/"];
+  const isValidRoute = !hideRoute.includes(location.pathname);
 
   return (
     <>
@@ -31,7 +31,7 @@ export default function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/article" element={<Article/>} />
-        <Route path="/award" element={<Award />} />
+        <Route path="/awards" element={<Award />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />

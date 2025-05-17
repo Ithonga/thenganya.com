@@ -12,7 +12,7 @@ function Collections() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col w-full h-fit shadow-lg overflow-hidden"
+            className="flex flex-col w-full h- shadow-lg overflow-hidden"
           >
             <div className="flex bg-red-500 h-fit overflow-hidden ">
               <img
