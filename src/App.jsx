@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Article from "./pages/Article";
 import Award from "./pages/Award";
 import Contact from "./pages/Contact";
+import Add from "./pages/Add";
 
 // const location = useLocation
 
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/add" element={<Add />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
